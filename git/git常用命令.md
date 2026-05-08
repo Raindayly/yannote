@@ -114,7 +114,8 @@ git config https.proxy http://127.0.0.1:7897
 git remote set-url origin 
 ```
 
-### commit信息修改
+### commit历史修改
+#### 邮箱姓名信息修改
 ``` bash
 git filter-branch -f --env-filter '
 OLD_EMAIL="原来的邮箱"
@@ -132,3 +133,4 @@ then
 fi
 ' --tag-name-filter cat -- --branches --tags
 ```
+注意 : 执行之前要清理工作区
