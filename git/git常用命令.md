@@ -102,3 +102,9 @@ git stash pop
 # 删除所有储藏
 git stash clear
 ```
+### 设置代理
+``` bash
+# 使用clash的端口号不加global 只在当前分支生效 如果想要全局生效那么加global
+git config http.proxy http://127.0.0.1:7897
+git config https.proxy http://127.0.0.1:7897
+```
