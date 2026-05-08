@@ -108,3 +108,8 @@ git stash clear
 git config http.proxy http://127.0.0.1:7897
 git config https.proxy http://127.0.0.1:7897
 ```
+
+### 远端地址
+``` bash
+git remote set-url origin 
+```
